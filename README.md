@@ -18,7 +18,7 @@ In this game, you start with a small balance and try to grow your wealth by work
 ## 🚀 How to Play  
 1. **Clone the Repository:**  
    ```bash
-   git clone https://github.com/yourusername/get-rich-simulator.git
+   git clone https://github.com/Githubboyat3am/get-rich-simulator.git
    cd get-rich-simulator
    ```
 2. **Run the Program** using your C# environment or IDE (e.g., Visual Studio).  
