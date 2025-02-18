@@ -173,22 +173,22 @@ namespace Get_rich_simulator
                         }
 
                     }
-                    if (investment == "Megasoft")
-                    {
-                        if (investReturn == 1)
-                        {
-                            balance = balance - investDeposit;
-                            investDeposit = investDeposit * 12;
-                            balance = balance + investDeposit;
-                            Console.WriteLine("This investment was a winner!");
-                        }
-                        else if (investReturn == 2)
-                        {
-                            balance = balance - investDeposit;
-                            Console.WriteLine("This investment lost you money!");
-                        }
+                    if (investment == "Bitcoin")
+{
+    if (investReturn == 1)
+    {
+        balance = balance - investDeposit;
+        investDeposit = investDeposit * 12;
+        balance = balance + investDeposit;
+        Console.WriteLine("This investment was a winner!");
+    }
+    else if (investReturn == 2)
+    {
+        balance = balance - investDeposit;
+        Console.WriteLine("This investment lost you money!");
+    }
 
-                    }
+}
 
                     else if (investDeposit > balance)
                     {
