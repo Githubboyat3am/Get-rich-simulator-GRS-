@@ -1,4 +1,4 @@
-Here's a draft README for your *Get Rich Simulator* game. Let me know if you'd like me to adjust it! 
+
 
 ---
 
