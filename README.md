@@ -9,7 +9,7 @@ A fun C# console game where you can build your fortune through jobs, investments
 **Get Rich Simulator (GRS) - Version 1.4**  
 - Fifth release  
 - Added investment risk feature  
-- Next update ideas: TBD  
+- Next update ideas: More houses and items to buy
 
 In this game, you start with a small balance and try to grow your wealth by working, investing, and buying property. But watch out—investments are risky!
 
