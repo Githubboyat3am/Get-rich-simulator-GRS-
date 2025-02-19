@@ -8,10 +8,10 @@ namespace Get_rich_simulator
     {
         static void Main(string[] args)
         {
-            /* GRS Version 1.4
-             * Fifth release 
-             * added risk
-             * I dont know what I will add next update
+            /* GRS Version 1.5
+             * Sixth release 
+             * added a new house
+             * Adding new things to buy in 1.5.1
              */
 
             bool back_door_dash = false;
@@ -174,28 +174,27 @@ namespace Get_rich_simulator
 
                     }
                     if (investment == "Bitcoin")
-{
-    if (investReturn == 1)
-    {
-        balance = balance - investDeposit;
-        investDeposit = investDeposit * 12;
-        balance = balance + investDeposit;
-        Console.WriteLine("This investment was a winner!");
-    }
-    else if (investReturn == 2)
-    {
-        balance = balance - investDeposit;
-        Console.WriteLine("This investment lost you money!");
-    }
+                    {
+                        if (investReturn == 1)
+                        {
+                            balance = balance - investDeposit;
+                            investDeposit = investDeposit * 12;
+                            balance = balance + investDeposit;
+                            Console.WriteLine("This investment was a winner!");
+                        }
+                        else if (investReturn == 2)
+                        {
+                            balance = balance - investDeposit;
+                            Console.WriteLine("This investment lost you money!");
+                        }
 
-}
+                    }
 
                     else if (investDeposit > balance)
                     {
                         Console.WriteLine("You spent to much money on this investment");
                         balance = balance - investDeposit;
                     }
-
                 }
                 else if (input == "real estate")
                 {
@@ -203,8 +202,10 @@ namespace Get_rich_simulator
                     Console.WriteLine("dump 200$");
                     Console.WriteLine("apartment 2000$");
                     Console.WriteLine("2 bedroom house 70000$");
+                    Console.WriteLine("Suburban house 500000$");
 
                     string house = Console.ReadLine();
+
 
                     if (house == "dump")
                     {
@@ -220,6 +221,11 @@ namespace Get_rich_simulator
                     {
                         Console.WriteLine("You have bought a 2 bedroom house! -70000$");
                         balance = balance - 70000;
+                    }
+                    else if (house == "Suburban house")
+                    {
+                        Console.WriteLine("You have bought a Suburban house! -500000$");
+                        balance = balance - 500000;
                     }
 
                 }
