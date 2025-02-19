@@ -53,7 +53,8 @@ In this game, you start with a small balance and try to grow your wealth by work
 ## 🏠 Real Estate Listings  
 - **Dump:** $200  
 - **Apartment:** $2,000  
-- **2 Bedroom House:** $70,000  
+- **2 Bedroom House:** $70,000
+- **Suburban House:** $500,000  
 
 ---
 
