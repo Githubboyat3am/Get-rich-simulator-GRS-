@@ -8,10 +8,10 @@ namespace Get_rich_simulator
     {
         static void Main(string[] args)
         {
-            /* GRS Version 1.5
-             * Sixth release 
-             * added a new house
-             * Adding new things to buy in 1.5.1
+            /* GRS Version 1.4
+             * Fifth release 
+             * added risk
+             * I dont know what I will add next update
              */
 
             bool back_door_dash = false;
@@ -55,7 +55,7 @@ namespace Get_rich_simulator
 
                     if (jobChoice == "back door dash")
                     {
-                        if (back_door_dash = true)
+                        if (back_door_dash == true)
                         {
                             Console.WriteLine("You're hired!");
                             Console.WriteLine("You have 5 deliveries");
@@ -70,7 +70,7 @@ namespace Get_rich_simulator
                                 Console.WriteLine("You received your payment!");
                             }
                         }
-                        else if (back_door_dash = false)
+                        else if (back_door_dash == false)
                         {
                             Console.WriteLine("You need a bicycle to do Back door dash!");
                         }
@@ -90,7 +90,7 @@ namespace Get_rich_simulator
                     Console.WriteLine("Hamburger 5$");
                     Console.WriteLine("1 pound fish 2$ (Very Very Cheap)");
                     Console.WriteLine("Bicycle 20$");
-                    Console.WriteLine();
+                    Console.WriteLine("Water skis 50$");
                     string item = Console.ReadLine();
 
                     if (item == "Hamburger")
@@ -108,6 +108,11 @@ namespace Get_rich_simulator
                         Console.WriteLine("Purchase made! -20$");
                         balance = balance - 20;
                         back_door_dash = true;
+                    }
+                    else if (item == "Water skis")
+                    {
+                        Console.WriteLine("Purchase made! -50$");
+                        balance = balance - 50;
                     }
 
                 }
@@ -229,7 +234,13 @@ namespace Get_rich_simulator
                     }
 
                 }
+                else if (input == "richmode")
+                {
+                    balance += 1000000; // Adds 1,000,000 to the player's balance
+                    Console.WriteLine("Cheat activated! You now have $1,000,000.");
+                }
             }  
         }
     }
 }
+
