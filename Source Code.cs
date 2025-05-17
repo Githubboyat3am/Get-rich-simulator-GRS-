@@ -8,9 +8,9 @@ namespace Get_rich_simulator
     {
         static void Main(string[] args)
         {
-            /* GRS Version 1.4
+            /* GRS Version 1.4.2
              * Fifth release 
-             * added risk
+             * Added mansion
              * I dont know what I will add next update
              */
 
@@ -232,6 +232,11 @@ namespace Get_rich_simulator
                         Console.WriteLine("You have bought a Suburban house! -500000$");
                         balance = balance - 500000;
                     }
+                    else if (house == "Modern Mansion")
+                    {
+                        Console.WriteLine("You have bought a Modern Mansion! -4000000$");
+                        balance = balance - 4000000;
+                    }
 
                 }
                 else if (input == "richmode")
@@ -243,4 +248,3 @@ namespace Get_rich_simulator
         }
     }
 }
-
